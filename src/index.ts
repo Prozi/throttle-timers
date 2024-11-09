@@ -1,9 +1,10 @@
 import { throttle } from "lodash";
 
-const oldSetTimeout = setTimeout;
-const oldSetInterval = setInterval;
+const originalSetTimeout = globalThis.setTimeout.bind(globalThis);
+const originalSetInterval = globalThis.setInterval.bind(globalThis);
 
-globalThis.setTimeout = ((callback: (args: void) => void, ms = 0) =>
-  oldSetTimeout(ms ? throttle(callback, ms) : callback, ms)) as any;
-globalThis.setInterval = ((callback: (args: void) => void, ms = 0) =>
-  oldSetInterval(ms ? throttle(callback, ms) : callback, ms)) as any;
+export const setTimeout = (callback: (args: void) => void, ms = 0) =>
+  originalSetTimeout(ms ? throttle(callback, ms) : callback, ms);
+
+export const setInterval = (callback: (args: void) => void, ms = 0) =>
+  originalSetInterval(ms ? throttle(callback, ms) : callback, ms);
