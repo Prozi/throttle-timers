@@ -1,7 +1,7 @@
 ## Usage
 
 ```
-{ setTimeout, setInterval } = require('throttle-timers');
+const { setTimeout, setInterval } = require('throttle-timers');
 
 globalThis.setTimeout = setTimeout;
 globalThis.setInterval = setInterval;
@@ -10,7 +10,7 @@ globalThis.setInterval = setInterval;
 or
 
 ```
-node -r throttle-timers file.js
+node -r throttle-timers/register file.js
 ```
 
 ## Then

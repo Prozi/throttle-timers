@@ -1,6 +1,6 @@
 {
   "name": "throttle-timers",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "lodash throttle override global setTimeout and setInterval",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,6 +14,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/Prozi/throttle-timers.git"
   },
+  "files": [
+    "register.js"
+  ],
   "keywords": [
     "throttle",
     "timers",
