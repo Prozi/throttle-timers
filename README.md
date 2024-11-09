@@ -1,10 +1,16 @@
 ## Usage
 
 ```
-{ setTimeout, setInterval } require('throttle-timers');
+{ setTimeout, setInterval } = require('throttle-timers');
 
 globalThis.setTimeout = setTimeout;
 globalThis.setInterval = setInterval;
+```
+
+or
+
+```
+node -r throttle-timers file.js
 ```
 
 ## Then
