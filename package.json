@@ -1,0 +1,35 @@
+{
+  "name": "throttle-timers",
+  "version": "1.0.0",
+  "description": "lodash throttle override global setTimeout and setInterval",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo yolo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Prozi/throttle-timers.git"
+  },
+  "keywords": [
+    "throttle",
+    "timers",
+    "setTimeout",
+    "setInterval",
+    "memleak",
+    "safe"
+  ],
+  "author": "Jacek Pietal <Prozi>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Prozi/throttle-timers/issues"
+  },
+  "homepage": "https://github.com/Prozi/throttle-timers#readme",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.17.13",
+    "lodash": "^4.17.21"
+  }
+}

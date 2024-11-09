@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2015", "ES2017.Object", "DOM"],
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "allowJs": true,
+    "sourceMap": false,
+    "declaration": true,
+    "declarationMap": false,
+    "moduleResolution": "node",
+    "target": "es2015",
+    "module": "none",
+    "outDir": "dist",
+  },
+  "files": ["src/index.ts"],
+  "include": ["src/**/*.ts"],
+  "exclude": ["**/*.spec.ts"]
+}
