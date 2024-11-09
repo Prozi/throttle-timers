@@ -1,8 +1,8 @@
 export declare const setTimeout: (
-  callback: (args: void) => void,
+  callback: (...args: any[]) => void,
   ms?: number,
 ) => number;
 export declare const setInterval: (
-  callback: (args: void) => void,
+  callback: (...args: any[]) => void,
   ms?: number,
 ) => number;

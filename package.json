@@ -1,11 +1,14 @@
 {
   "name": "throttle-timers",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "lodash throttle override global setTimeout and setInterval",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo yolo"
+    "test": "echo yolo",
+    "build": "tsc",
+    "format": "npx prettier . --write",
+    "precommit": "yarn build && yarn format"
   },
   "repository": {
     "type": "git",
